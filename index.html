@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barber Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital@0;1&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+<body>
+
+    <!-- Home Section -->
+    <section id="front">
+        <img src="logo.png" class="logo">
+
+        <div class="text">
+            <h1>Hair Studio</h1>
+            <P>Life Is Not Perfect But Your Hair Can Be </P>
+            <div class="banner-button">
+                <a href="#"><span></span>Find Out</a>
+                <a href="#"><span></span>Read More</a>
+
+            </div>
+        </div>
+    </section>
+
+    <div id="side-navigation">
+        <nav>
+            <ul>
+                <li><a href="#front">HOME</a></li>
+                <li><a href="#feature">FEATURES</a></li>
+                <li><a href="#Services">SERVICES</a></li>
+                <li><a href="#footer">MEET US</a></li>
+                
+            </ul>
+        </nav>
+    </div>
+    <div id="menu-button">
+         <img src="menu.png" id="menu">
+    </div>
+
+
+    <!-- FEATURES SECTION -->
+
+    <section id="feature">
+        <div class="title-text">
+            <h1>Why Choose Us</h1><br><br>
+        </div>
+
+        <div class="feature-box">
+            <div class="features">
+                <h1>&#xf3ed Experienced Staff</h1>
+                <div class="feature-desc">
+                      <div class="feature-text">
+                            <p>Our Staff Is Well Experienced And Well Mannered</p>
+                      </div>
+                </div>
+
+                <h1>&#x2713 Pre-Booking Online</h1>
+                <div class="feature-desc">
+                      <div class="feature-text">
+                            <p>You Can Pre-book Online According To Your Convient Time Slot</p>
+                      </div>
+                </div>
+
+                <h1>&#x20B9 Affordable Cost</h1>
+                <div class="feature-desc">
+                      <div class="feature-text">
+                            <p>Our Cost Is Very Minimal.So Everyone Can Afford It</p>
+                      </div>
+                </div>
+
+            </div>
+            <div class="features-img">
+                <img src="barber-man.jpg">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Services -->
+    <section id="Services">
+        <div class="title-text">
+            <h1>Our Services</h1><br><br>
+        </div>
+
+        <div class="service-box">
+            <div class="single-service">
+                <img src="pic-1.jpg" >
+                <div class="service-desc">
+                    <p>Hair Cutting</p>
+                    <hr>
+                </div>
+            </div>
+            <div class="single-service">
+                <img src="pic-2.jpg">
+                <div class="service-desc">
+                    <p>Beard Trimming</p>
+                    <hr>
+                </div>
+            </div>
+            <div class="single-service">
+                <img src="pic-3.jpg">
+                <div class="service-desc">
+                    <p>Hair Styling</p>
+                    <hr>
+                </div>
+            </div>
+            <div class="single-service">
+                <img src="pic-4.jpg">
+                <div class="service-desc">
+                    <p>Dry Shampoo</p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--------------- FOOter-------------------- -->
+
+    <section id="footer">
+        <img src="footer-img.png" class="footer-img">
+        <div class="title-text">
+            <h1>Contact Us</h1><br><br>
+            <p>Visit Shop Today</p><br><br>
+        </div>
+
+        <div class="footer-row">
+            <div class="footer-left">
+                <h1>&#xf254 Opening Hours</h1>
+              <P>Monday To Friday:- 9am to 9pm</P>
+              <p>Saturday And Sunday:- 8am to 10pm</p>
+            </div>
+
+            <div class="footer-right">
+                <h1>&#xf254 Get In Touch With US</h1>
+                <P>Address:-JJ Colony,Vikaspuri,New Delhi</P>
+                <p>Email:-abcg@gmail.com,exp@gmail.com</p>
+                <p>Mobile:- +91 1234567890 ,+01 3682997499</p>
+            </div>
+              
+        </div>
+        
+       
+
+    </section>
+    
+
+
+    <script>
+        var menuButton =document.getElementById("menu-button")
+        var sideNavigation= document.getElementById("side-navigation")
+        var menu=document.getElementById("menu")
+
+        menuButton.onclick = function(){
+            if(sideNavigation.style.right=="-200px"){
+                sideNavigation.style.right="0";
+            }
+            else{
+                sideNavigation.style.right="-200px";
+            }
+        }
+
+        // All animations will take exactly 500ms
+var scroll = new SmoothScroll('a[href*="#"]', {
+	speed:700,
+	speedAsDuration: true
+});
+    </script>
+</body>
+</html>

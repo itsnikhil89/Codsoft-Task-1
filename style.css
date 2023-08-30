@@ -1,0 +1,249 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+
+}
+#front{
+    background:linear-gradient(rgba(0,0,0,0.5),#009688),url(banner.jpg);
+    background-size:cover;
+    background-position: center;
+    height:100vh;
+
+}
+
+.text{
+    color:white;
+    text-align: center;
+    padding-top: 100px;
+}
+.text h1{
+    font-size: 110px;
+    font-family: 'Kaushan Script', cursive;
+}
+.text p{
+    font-size: 25px;
+    font-style: italic;
+}
+.banner-button{
+     margin: 70px auto 0;
+}
+.banner-button a{
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: rgba(249, 249, 247, 0.865);
+    border: .5px solid white;
+    position: relative;
+    z-index: 1;
+    
+
+    
+}
+.banner-button a span{
+    width:0%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    background: white;
+    z-index: -1;
+    transition: 0.5s;
+}
+.banner-button a:hover span{
+    width:100%;
+}
+.banner-button a:hover{
+    color:black;
+}
+
+#side-navigation{
+    width: 200px; 
+    height:110vh;
+    position: fixed;
+    right: -200px;
+    top:0;
+    transition: 0.7s;
+    background:#009688 ;
+    z-index: 2;
+}
+nav ul li{
+    padding-top: 10px;
+    list-style: none;
+    margin: 60px 10px;
+    
+}
+nav ul li a{
+    color:white;
+    text-decoration: none;
+}
+
+#menu-button{
+    width:50px;
+    height:50px;
+    background:#009688;
+    position: fixed;
+    right:20px;
+    top:10px;
+    cursor: pointer;
+    z-index: 3;
+    text-align: center;
+    border-radius: 3px;
+
+}
+#menu-button img{
+    width: 20px;
+    margin-top:  15px; 
+}
+
+/* Features */
+
+#feature{
+    width:100%;
+    padding: 55px 0;
+    background:rgb(235, 231, 231); 
+}
+.title-text{
+    text-align: center;
+}
+
+.title-text h1{
+    font-size: 40px;
+    font-family:sans-serif;
+    color: #009688;
+}
+
+.feature-box{
+    width:80%;
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+}
+.features{
+    flex-basis: 50%;
+}
+.features-img{
+    flex-basis: 50%;
+    margin:auto;
+}
+.features-img img{
+    width:70%;
+    border-radius: 10px;
+}
+.features h1{
+    text-align: left;
+    margin-bottom:10px ;
+    font-weight: 100;
+    color:#009688
+}
+.feature-desc{
+    display: flex;
+    align-items:center;
+    margin-bottom: 40px;
+    
+}
+.feature-text p{
+    padding:0 20px;
+    text-align: initial;
+    font-weight: bold;
+    font-size: 15px;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+/* Services */
+
+#Services{
+    width:100%;
+    padding: 61px 0;
+    background: rgb(235, 231, 231);
+
+
+}
+
+.service-box{
+    width:80%;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-around ;
+    margin:auto;
+}
+.single-service{
+    flex-basis:48%;
+    text-align:center;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    
+
+}
+.single-service img{
+    width:100%;
+    border-radius: 6pxc;
+    
+    
+}
+
+hr{
+    background:black;
+    height: 3px;
+    border:5px;
+}
+.service-desc p{
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color:black;
+}
+
+/* -------------------Footer Section------------------- */
+
+#footer{
+    padding:100px 20px;
+    position: relative;
+}
+
+.title-text p{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.footer-row{
+    width:80%;
+    margin:0 auto;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-left,.footer-right{
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+.footer-right {
+    text-align:end;
+}
+.footer-row h1{
+    margin:10px 0;
+    
+}
+.footer-row p{
+    line-height: 35px;
+}
+
+.footer-img{
+    max-width: 370px;
+    opacity: 0.2;
+    position: absolute;
+    left:50%;
+    top:35%;
+    transform: translate(-50%,-50%);
+}
+ 
+
+
